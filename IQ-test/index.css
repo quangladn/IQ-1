@@ -1,0 +1,33 @@
+.center {
+    margin: auto;
+    width: 50%;
+    /* border: 3px solid green; */
+    padding: 10px;
+}
+input {
+    padding-right: 5rem;
+}
+
+button {
+    height: 40%;
+    width: 100%;
+    font-size:100%;
+    /* font-display: 13px; */
+}
+
+.iq {
+    padding-left: 6.5rem;
+    padding-right: 8rem;
+}
+
+#a {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+#c {
+    height: 200px;
+    position: relative;
+}
