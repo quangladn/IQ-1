@@ -11,7 +11,7 @@ function choice(dapAn,index) {
 }
 
 
-var dapAn = ['b','c','a','d','b','d','b','a','c']
+var dapAn = ['b','c','a','d','b','d','b','a','a','c']
 
 function calculatorNum(list) {
     var num = 0
