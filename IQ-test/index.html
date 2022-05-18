@@ -1,119 +1,44 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./index.css">
-</head>
-<body>
-        <div class="center">
-        <h1>chủ đề 1: kiểm tra IQ   </h1>
-        <div id="1">
-            <p>Trong bài test của bạn có một số câu hỏi. Bạn đã trả lời sai 10 câu hỏi. Kết quả thang điểm của bạn chỉ đạt 60%. Vậy bài test của bạn có tất cả bao nhiêu câu hỏi?</p>
-            <button onclick="choice('a',1)">A: 20</button>
-            <button onclick="choice('b',1)">B: 25</button>
-            <button onclick="choice('c',1)">C: 30</button>
-            <button onclick="choice('d',1)">D: 35</button>
-        </div>
-        <div id="2">
-            <p> Trong 4 loại sau đây, loại nào có đặc tính ít giống với 3 loại còn lại?</p>
-            <button onclick="choice('a',2)">A: tỏi</button>
-            <button onclick="choice('b',2)">B: nho</button>
-            <button onclick="choice('c',2)">C: rau diếp cá</button>
-            <button onclick="choice('d',2)">D: nấm</button>
-        </div>
-        <div id="3">
-            <p>Bạn có 84 quả táo đựng trong 12 giỏ, nếu muốn ăn 1/3 số táo trong mỗi giỏ thì bạn cần ít nhất bao nhiêu lần cắn, biết rằng mỗi lần bạn cắn được 1/3 của 1/2 quả táo.</p>
-            <button onclick="choice('a',3)">A: 168</button>
-            <button onclick="choice('b',3)">B: 121</button>
-            <button onclick="choice('c',3)">C: 144</button>
-            <button onclick="choice('d',3)">D: 225</button>
-        </div>
-        <div id="4">
-            <p>8 người sơn được 3 cái nhà trong 6 giờ. Hỏi
-                với 12 người sẽ sơn được bao nhiêu cái nhà
-                trong 12 giờ?</p>
-            <button onclick="choice('a',4)">A: 3 cái</button>
-            <button onclick="choice('b',4)">C: 7 cái</button>
-            <button onclick="choice('c',4)">B: 5 cái</button>
-            <button onclick="choice('d',4)">D: 9 cái</button>
-        </div>
-        <div id="5">
-            <p> Người ta đổ nước vào một bể cạn theo tỷ lệ
-                không đổi, sau 8 giờ thì đổ được 3/5 thể tích
-                của bể. Hỏi cần thêm thời gian là bao lâu nữa
-                để đổ đầy bể nước đó?</p>
-            <button onclick="choice('a',5)">A: 5 giờ 30 phút</button>
-            <button onclick="choice('b',5)">B: 5 giờ 20 phút</button>
-            <button onclick="choice('c',5)">C: 4 giờ 48 phút</button>
-            <button onclick="choice('d',5)">D: 3 giờ 12 phút</button>
-        </div>
-        <div id="6">
-            <p>Trời âm u, đất tù mù, có 3 người gù, chung
-                một cây dù. Hỏi người nào ướt?</p>
-            <button onclick="choice('a',6)">A: Người
-                thứ nhất</button>
-            <button onclick="choice('b',6)">B: Người
-                thứ hai</button>
-            <button onclick="choice('c',6)">C: Người
-                thứ ba</button>
-            <button onclick="choice('d',6)">D: Không
-                có người
-                nào ướt</button>
-        </div>
-        <div id="7">
-            <p>Sắp xếp các chữ cái: "HÙCYẬNUC" bạn được
-                tên của...</p>
-            <button onclick="choice('a',7)">A: Một tỉnh thành</button>
-            <button onclick="choice('b',7)">B: Một
-                nhà thơ</button>
-            <button onclick="choice('c',7)">C: Một bài
-                hát</button>
-            <button onclick="choice('d',7)">D: Một vị
-                vua</button>
-        </div>
-        <div id="8">
-            <p>Điền hình còn thiếu vào chỗ trống.</p> <br>
-            <img src="./img/8.png" alt="">
-            <button onclick="choice('a',8)">A</button>
-            <button onclick="choice('b',8)">B</button>
-            <button onclick="choice('c',8)">C</button>
-            <button onclick="choice('d',8)">D</button>
-            <button onclick="choice('e',8)">E</button>
-        </div>
-        <div id="9">
-            <p>Số nào sẽ là số tiếp theo của chuỗi số sau?                
-                0, 1, 2, 4, 6, 9, 12, 16, ?</p>
-            <button onclick="choice('a',9)">A: 20</button>
-            <button onclick="choice('b',9)">B: 13</button>
-            <button onclick="choice('c',9)">C: 23</button>
-            <button onclick="choice('d',9)">D: 15</button>
-        </div>
-        <div id="10">
-            <p>Mỗi số trong hình kim tự tháp ở dưới là tổng của hai số ngay
-                bên dưới nó. Hãy điền vào kim tự tháp số còn thiếu.</p>
-                <img src="./img/10.png" class="iq">
-            <button onclick="choice('a',10)">A: 103,44,28,12,16,12,2,5,9,3</button>
-            <button onclick="choice('b',10)">B: 103,47,29,12,13,12,2,5,9,4</button>
-            <button onclick="choice('c',10)">C: 103,47,28,12,16,12,2,5,9,3</button>
-            <button onclick="choice('d',10)">D: 103,47,28,12,15,12,2,7,9,3</button>
-        </div>
-    </div>
-        <!-- <div id="4">
-            <p> cau hoi 4</p>
-            <button onclick="choice('a',4)">A: 123</button>
-            <button onclick="choice('b',4)">B: 1234</button>
-            <button onclick="choice('c',4)">C: 12345</button>
-            <button onclick="choice('d',4)">D: 123456</button>
-        </div> -->
+var ketQua = []
 
-        <div id="c">
-            <div id="a">
-                <button id="aa" onclick="calculatorNum(ketQua)"> xem diem </button>
-            </div>
-        </div>
-    <script src="./index.js"></script>
-</body>
-</html>
+function changeStyle(value){
+    var element = document.getElementById(`${value}`);
+    element.style.display = "none";
+}
+function choice(dapAn,index) {
+    ketQua.push(dapAn)
+    changeStyle(index)
+    console.log(ketQua)
+}
+
+
+var dapAn = ['b','c','a','d','b','d','b','a','a','c']
+
+function calculatorNum(list) {
+    var num = 0
+    for (let i = 0; i < ketQua.length; i++) {
+        if (list[i] === dapAn[i]) {
+            num ++
+            console.log(num)
+        }
+        else {
+            console.log(num)
+        }
+    }
+    document.write(`<link rel="stylesheet" href="./index.css">
+    <div class="center">
+    <h1 style="text-align: center;" > điểm của bạn là </h1>
+    <h1 style="text-align: center;" > ${num}/${dapAn.length} </h1>
+    </div>`)
+}
+
+function xemDiem() {
+    if (ketQua.length <= 45) {
+        alert('lỗi ấn lại')
+    }
+    else {
+        return
+    }
+    console.log(ketQua.length)
+}
+
+// xemDiem()
