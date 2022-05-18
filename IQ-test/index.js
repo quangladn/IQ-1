@@ -27,7 +27,7 @@ function calculatorNum(list) {
     document.write(`<link rel="stylesheet" href="./index.css">
     <div class="center">
     <h1 style="text-align: center;" > điểm của bạn là </h1>
-    <h1 style="text-align: center;" > ${num}/${dapAn.length + 1} </h1>
+    <h1 style="text-align: center;" > ${num}/${dapAn.length} </h1>
     </div>`)
 }
 
